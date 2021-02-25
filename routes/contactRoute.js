@@ -57,7 +57,7 @@ router.post('/', upload.array('img') , async (req, res) => {
 });
 
 //Get all
-router.get('/', async (req, res) => {
+router.get('/', verify, async (req, res) => {
 
     try {
         const allContact = await Contact.find();

@@ -8,7 +8,7 @@ const authRoute = require('./routes/auth');
 const contactRoute = require('./routes/contactRoute');
 
 dotenv.config();
-const port = process.env.PORT || '8080';
+const port = process.env.PORT || 8080;
 
 //Connect to DB
 mongoose.connect(
